@@ -11,11 +11,11 @@ export class Triangle {
   }
 
   isEquilateral() {
-    if(this.firstSide === this.secondSide && this.secondSide === this.thirdSide) {
+    if(this.firstSide === this.secondSide && this.secondSide === this.thirdSide && this.firstSide !== 0 ) {
       console.log(this.firstSide, this.secondSide, this.thirdSide)
       return true;
     } else {
-      return false;
+      return false
     }
   }
 
