@@ -28,11 +28,13 @@ export class Triangle {
     if (this.firstSide === 1 || this.secondSide === 1 || this.thirdSide === 1) {
       this.isItIsosceles = false;
     }
-    
+
     return this.isItIsosceles
   }
 
   isScalene() {
-    throw new Error("Remove this statement and implement this function");
+    if(this.firstSide !== this.secondSide && this.secondSide !== this.thirdSide && this.firstSide !== this.thirdSide) {
+      return true
+    }
   }
 }
