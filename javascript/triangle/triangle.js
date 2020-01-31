@@ -5,11 +5,13 @@
 
 export class Triangle {
   constructor() {
-    throw new Error("Remove this statement and implement this function");
   }
 
-  isEquilateral() {
-    throw new Error("Remove this statement and implement this function");
+  isEquilateral(firstSide, secondSide, thirdSide) {
+    console.log('--->', this.isEquilateral)
+    if(firstSide === secondSide && secondSide === thirdSide) {
+      return true;
+    }
   }
 
   isIsosceles() {
