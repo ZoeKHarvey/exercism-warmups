@@ -4,13 +4,18 @@
 //
 
 export class Triangle {
-  constructor() {
+  constructor(firstSide, secondSide, thirdSide) {
+    this.firstSide = firstSide
+    this.secondSide = secondSide
+    this.thirdSide = thirdSide
   }
 
-  isEquilateral(firstSide, secondSide, thirdSide) {
-    console.log('--->', this.isEquilateral)
-    if(firstSide === secondSide && secondSide === thirdSide) {
+  isEquilateral() {
+    if(this.firstSide === this.secondSide && this.secondSide === this.thirdSide) {
+      console.log(this.firstSide, this.secondSide, this.thirdSide)
       return true;
+    } else {
+      return false;
     }
   }
 
