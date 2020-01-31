@@ -8,6 +8,7 @@ export class Triangle {
     this.firstSide = firstSide
     this.secondSide = secondSide
     this.thirdSide = thirdSide
+    this.isItIsosceles = false
   }
 
   isEquilateral() {
@@ -19,10 +20,11 @@ export class Triangle {
 
   isIsosceles() {
     if(this.firstSide === this.secondSide || this.secondSide === this.thirdSide || this.firstSide === this.thirdSide) {
-      return true
+      this.isItIsosceles = true
     } else {
-      return false;
+      this.isItIsosceles = false;
     }
+    return this.isItIsosceles
   }
 
   isScalene() {
