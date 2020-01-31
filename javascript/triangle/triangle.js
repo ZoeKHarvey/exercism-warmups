@@ -9,6 +9,7 @@ export class Triangle {
     this.secondSide = secondSide
     this.thirdSide = thirdSide
     this.isItIsosceles = false
+    this.isItScalene = false
   }
 
   isEquilateral() {
@@ -34,9 +35,14 @@ export class Triangle {
 
   isScalene() {
     if(this.firstSide !== this.secondSide && this.secondSide !== this.thirdSide && this.firstSide !== this.thirdSide) {
-      return true
+      this.isItScalene = true
     } else {
-      return false
+      this.isItScalene = false
     }
+    
+    if(this.secondSide + this.thirdSide < this.firstSide) {
+      this.isItScalene = false
+    }
+    return this.isItScalene
   }
 }
