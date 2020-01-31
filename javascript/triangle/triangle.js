@@ -11,16 +11,16 @@ export class Triangle {
   }
 
   isEquilateral() {
-    if(this.firstSide === this.secondSide && this.secondSide === this.thirdSide && this.firstSide !== 0 ) {
-      console.log(this.firstSide, this.secondSide, this.thirdSide)
-      return true;
+    if(this.firstSide === this.secondSide && this.secondSide === this.thirdSide && this.firstSide !== 0 ) {      return true;
     } else {
       return false
     }
   }
 
   isIsosceles() {
-    throw new Error("Remove this statement and implement this function");
+    if(this.firstSide === this.secondSide || this.secondSide === this.thirdSide || this.firstSide === this.thirdSide) {
+      return true
+    }
   }
 
   isScalene() {
