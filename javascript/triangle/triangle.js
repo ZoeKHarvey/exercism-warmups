@@ -35,6 +35,8 @@ export class Triangle {
   isScalene() {
     if(this.firstSide !== this.secondSide && this.secondSide !== this.thirdSide && this.firstSide !== this.thirdSide) {
       return true
+    } else {
+      return false
     }
   }
 }
