@@ -3,6 +3,8 @@
 // convenience to get you started writing code faster.
 //
 
-export const convert = () => {
-  throw new Error("Remove this statement and implement this function");
+export const convert = (num) => {
+  if(num%3 !== 0) {
+    return num.toString()
+  }
 };
