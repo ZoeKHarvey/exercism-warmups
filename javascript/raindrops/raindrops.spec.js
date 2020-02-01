@@ -24,16 +24,16 @@ describe('Raindrops', () => {
   test('the sound for 14 is Plong as it has a factor of 7', () =>
     expect(convert(14)).toEqual('Plong'));
 
-  xtest('the sound for 15 is PlingPlang as it has factors 3 and 5', () =>
+  test('the sound for 15 is PlingPlang as it has factors 3 and 5', () =>
     expect(convert(15)).toEqual('PlingPlang'));
 
-  xtest('the sound for 21 is PlingPlong as it has factors 3 and 7', () =>
+  test('the sound for 21 is PlingPlong as it has factors 3 and 7', () =>
     expect(convert(21)).toEqual('PlingPlong'));
 
-  xtest('the sound for 25 is Plang as it has a factor 5', () =>
+  test('the sound for 25 is Plang as it has a factor 5', () =>
     expect(convert(25)).toEqual('Plang'));
 
-  xtest('the sound for 27 is Pling as it has a factor 3', () =>
+  test('the sound for 27 is Pling as it has a factor 3', () =>
     expect(convert(35)).toEqual('PlangPlong'));
 
   xtest('the sound for 35 is PlangPlong as it has factors 5 and 7', () =>

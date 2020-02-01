@@ -4,17 +4,19 @@
 //
 
 export const convert = (num) => {
+  let statement = ''
   if(num%3 !== 0 && num%5 !==0 && num%7 !==0) {
     return num.toString()
   }
   if(num%3 === 0) {
-    return 'Pling'
+    statement = statement + 'Pling'
   }
   if(num%5 === 0) {
-    return 'Plang'
+    statement = statement + 'Plang'
   }
   if(num%7 === 0) {
-    return 'Plong'
+    statement = statement + 'Plong'
   }
+  return statement
 };
 
