@@ -4,9 +4,14 @@
 //
 
 export const convert = (num) => {
-  if(num%3 !== 0) {
+  if(num%3 !== 0 && num%5 !==0 && num%7 !==0) {
+    return num.toString()
+  if(num%3 === 0) {
+    return 'Pling'
+  }
+  if(num%5 !==0) {
     return num.toString()
   } else {
-    return 'Pling'
+    return 'Plang'
   }
 };
