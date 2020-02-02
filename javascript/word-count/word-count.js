@@ -3,6 +3,10 @@
 // convenience to get you started writing code faster.
 //
 
-export const countWords = () => {
-  throw new Error("Remove this statement and implement this function");
+export const countWords = (words) => {
+  let wordCount = 0;
+  let wordArray = []
+  let splitWords = words.split(' ')
+  splitWords.reduce((acc, word) => {
+  }, {})
 };
