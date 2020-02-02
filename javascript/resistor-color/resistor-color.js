@@ -10,6 +10,9 @@ export const colorCode = (color) => {
   if(color === 'white') {
     return 9
   }
+  if(color === 'orange') {
+    return 3
+  }
 };
 
 export const COLORS = undefined;
