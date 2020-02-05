@@ -13,7 +13,7 @@ export class HighScores {
   }
 
   get latest() {
-    throw new Error("Remove this statement and implement this function");
+    return this.input[this.input.length-1]
   }
 
   get personalBest() {
