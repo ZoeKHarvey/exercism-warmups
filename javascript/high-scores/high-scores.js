@@ -4,12 +4,12 @@
 //
 
 export class HighScores {
-  constructor() {
-    throw new Error("Remove this statement and implement this function");
+  constructor(input) {
+    this.input = input
   }
 
   get scores() {
-    throw new Error("Remove this statement and implement this function");
+    return this.input
   }
 
   get latest() {
