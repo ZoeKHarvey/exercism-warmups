@@ -4,11 +4,12 @@
 //
 
 export const isPangram = (str) => {
-  const correct = 'abcdefghijklmnopqrstuvwxyz'
-  if(str === '') {
-    return false
-  }
-  if(correct.includes(str)) {
-    return true
-  }
+    var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+      str = str.toLowerCase();
+      for (var i = 0; i < alphabet.length; i++) {
+        if (!str.includes(alphabet[i])) {
+          return false;
+        };
+      };
+      return true;
 };
