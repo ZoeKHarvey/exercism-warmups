@@ -3,6 +3,8 @@
 // convenience to get you started writing code faster.
 //
 
-export const isPangram = () => {
-  throw new Error("Remove this statement and implement this function");
+export const isPangram = (str) => {
+  if(str === '') {
+    return false
+  }
 };
