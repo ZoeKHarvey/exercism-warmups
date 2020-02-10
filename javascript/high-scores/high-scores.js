@@ -17,10 +17,12 @@ export class HighScores {
   }
 
   get personalBest() {
-    throw new Error("Remove this statement and implement this function");
-  }
+   return this.input.map(function(subArray) {
+    return Math.max.apply(null, subArray);
+  })
+   }
 
   get personalTopThree() {
     throw new Error("Remove this statement and implement this function");
-  }
+}
 }
