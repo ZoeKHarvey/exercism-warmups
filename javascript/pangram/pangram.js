@@ -4,7 +4,11 @@
 //
 
 export const isPangram = (str) => {
+  const correct = 'abcdefghijklmnopqrstuvwxyz'
   if(str === '') {
     return false
+  }
+  if(correct.includes(str)) {
+    return true
   }
 };
