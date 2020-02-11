@@ -5,7 +5,7 @@
 
 export const compute = (strOne, strTwo) => {
   if(strOne.length !==  strTwo.length) {
-    return 0
+    throw 'left and right strands must be of equal length'
   }
   let splitOne = strOne.split('')
   return splitOne.reduce((acc, elem, i) => {
