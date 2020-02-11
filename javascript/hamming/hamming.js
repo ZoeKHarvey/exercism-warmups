@@ -7,6 +7,9 @@ export const compute = (strOne, strTwo) => {
   if(strOne === '' && strTwo !== '') {
     throw 'left strand must not be empty'
   } 
+  if(strTwo === '' && strOne !== '') {
+    throw 'right strand must not be empty'
+  }
   if(strOne.length !==  strTwo.length) {
     throw 'left and right strands must be of equal length'
   }
