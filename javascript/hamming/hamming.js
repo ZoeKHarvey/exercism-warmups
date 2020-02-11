@@ -4,10 +4,7 @@
 //
 
 export const compute = (strOne, strTwo) => {
-
-  if(strOne === '' || strTwo === '' && strOne !== '' || strTwo !== '')
-  // if(strOne === '' && strTwo !== '') 
-  {
+  if(strOne === '' && strTwo !== '') {
     throw 'left strand must not be empty'
   } 
   if(strTwo === '' && strOne !== '') {
