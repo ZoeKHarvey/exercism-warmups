@@ -27,7 +27,7 @@ describe('Hamming', () => {
     );
   });
 
-  xtest('disallow second strand longer', () => {
+  test('disallow second strand longer', () => {
     expect(() => compute('ATA', 'AGTG')).toThrow(
       new Error('left and right strands must be of equal length'),
     );
