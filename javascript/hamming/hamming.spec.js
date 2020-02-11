@@ -13,7 +13,7 @@ describe('Hamming', () => {
     expect(compute('G', 'T')).toEqual(1);
   });
 
-  xtest('long identical strands', () => {
+  test('long identical strands', () => {
     expect(compute('GGACTGAAATCTG', 'GGACTGAAATCTG')).toEqual(0);
   });
 
