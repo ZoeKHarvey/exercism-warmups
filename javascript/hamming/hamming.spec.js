@@ -17,7 +17,7 @@ describe('Hamming', () => {
     expect(compute('GGACTGAAATCTG', 'GGACTGAAATCTG')).toEqual(0);
   });
 
-  xtest('long different strands', () => {
+  test('long different strands', () => {
     expect(compute('GGACGGATTCTG', 'AGGACGGATTCT')).toEqual(9);
   });
 
