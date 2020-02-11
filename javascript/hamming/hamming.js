@@ -3,6 +3,8 @@
 // convenience to get you started writing code faster.
 //
 
-export const compute = () => {
-  throw new Error("Remove this statement and implement this function");
+export const compute = (strOne, strTwo) => {
+  if(strOne || strTwo === '') {
+    return 0
+  }
 };
