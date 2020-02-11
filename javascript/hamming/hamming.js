@@ -4,6 +4,9 @@
 //
 
 export const compute = (strOne, strTwo) => {
+  if(strOne.length !==  strTwo.length) {
+    return 0
+  }
   let splitOne = strOne.split('')
   return splitOne.reduce((acc, elem, i) => {
     if(elem !== strTwo[i]) {
