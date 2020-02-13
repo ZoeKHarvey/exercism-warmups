@@ -3,16 +3,8 @@
 // convenience to get you started writing code faster.
 //
 
-export const colorCode = (color) => {
-  if(color === 'black') {
-    return 0
-  }
-  if(color === 'white') {
-    return 9
-  }
-  if(color === 'orange') {
-    return 3
-  }
+export const colorCode = () => {
+  throw new Error("Remove this statement and implement this function");
 };
 
 export const COLORS = undefined;
