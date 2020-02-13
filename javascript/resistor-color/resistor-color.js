@@ -4,7 +4,7 @@
 //
 
 export const colorCode = (color) => {
-  
+  return COLORS.indexOf(color);
 };
 
 
