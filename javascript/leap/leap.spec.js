@@ -13,7 +13,7 @@ describe('A leap year', () => {
     expect(isLeap(1996)).toBe(true);
   });
 
-  xtest('year divisible by 4 and 5 is still a leap year', () => {
+  test('year divisible by 4 and 5 is still a leap year', () => {
     expect(isLeap(1960)).toBe(true);
   });
 
