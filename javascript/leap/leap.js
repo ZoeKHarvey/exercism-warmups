@@ -4,7 +4,9 @@
 //
 
 export const isLeap = (year) => {
-  let leap = false
-  year % 4 === 0 ? leap = true : leap = false
-  return leap
+  if(year % 4 === 0 && year % 100 !== 0 ) {
+    return true;
+  } else {
+    return false;
+  }
 };
