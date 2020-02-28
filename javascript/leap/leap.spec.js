@@ -21,7 +21,7 @@ describe('A leap year', () => {
     expect(isLeap(2100)).toBe(false);
   });
 
-  xtest('year divisible by 100 but not by 3 is still not a leap year', () => {
+  test('year divisible by 100 but not by 3 is still not a leap year', () => {
     expect(isLeap(1900)).toBe(false);
   });
 
